@@ -19,7 +19,7 @@ public class SequenceGenerator {
     public int generateNextOrderId(){
 
         OrderSequence counter = mongoOperations.findAndModify(
-                Query.query(where("_id").is(1)),
+                Query.query(where("_id").is(1)),// refers to the column name = _id with value 1
                 new Update().inc("sequence",1),
                FindAndModifyOptions.options().returnNew(true).upsert(true),OrderSequence.class
        );
