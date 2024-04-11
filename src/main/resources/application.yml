@@ -9,6 +9,8 @@ eureka:
 spring:
   application:
     name: Order-Service
+  profiles:
+    active: dev
   main:
     banner-mode: off #turn off spring boot banner
   data:
