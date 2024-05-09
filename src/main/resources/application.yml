@@ -15,7 +15,7 @@ spring:
     banner-mode: off #turn off spring boot banner
   data:
     mongodb:
-      uri: mongodb+srv://ashaselvaraj:UbV8wdfusAJzq7J1@ashaselvarajmongodb.bdqzbab.mongodb.net/orderdb
+      uri: mongodb+srv://ashaselvaraj:UbV8wdfusAJzq7J1@ashaselvarajmongodb.bdqzbab.mongodb.net/?retryWrites=true&w=majority
       host: ashaselvarajmongodb.bdqzbab.mongodb.net
       database: orderdb #created by mongodb during runtime
       repositories:
